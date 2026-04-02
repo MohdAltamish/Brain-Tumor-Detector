@@ -5,7 +5,7 @@ import cv2
 from tensorflow.keras.models import load_model
 
 # 1. Load the Champion Model
-model = load_model('models/v3_Final_Booster.h5')
+model = load_model('models/v4_Unbeatable_Final.h5')
 class_names = ['Glioma', 'Meningioma', 'No Tumor', 'Pituitary']
 
 # 2. Helper: The Noise Attack (For Demonstration)
