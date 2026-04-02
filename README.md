@@ -235,6 +235,12 @@ The system was developed through 5 iterative experiments:
 | 4 | v3 Robustness Validation | — | 74% | 42% | 70% |
 | 5 | MobileNetV2 + Heavy Aug (Champion) | **92.7%** | 96% | 40% | **96%** |
 
+**Training Performance - Xception Model**
+![Xception Performance](presentation_assets/xception_performance.png)
+
+**Training Performance - v3 Booster Model**
+![Final v3 Performance](presentation_assets/final_v3_performance.png)
+
 ### Key Insight
 The Fourier-based K-Space attack drops accuracy to ~40% by design — it targets the frequency domain directly. The FourierHealer restores performance to baseline (96%) by applying a surgical band-stop mask in the frequency domain, proving that **domain-aware defenses are essential for real-world medical AI robustness**.
 
@@ -246,8 +252,15 @@ The Fourier-based K-Space attack drops accuracy to ~40% by design — it targets
 |---|---|---|
 | Original diagnostic scan | OmniChaos 7-layer corruption | Defense pipeline restored |
 
+![Adversarial Attack Comparison](presentation_assets/attack_comparison_v1.png)
+
+![Pituitary Tumor Prediction](presentation_assets/pituitary_demo.png)  
 **Pituitary Tumor** — 99.5% confidence after adversarial recovery  
+
+![Meningioma Prediction](presentation_assets/meningioma_demo.png)  
 **Meningioma** — 93.4% confidence with visible tumor mass in CAM focus area  
+
+![No Tumor Prediction](presentation_assets/no_tumor_demo.png)  
 **No Tumor** — 99.9% confidence on clean healthy scan
 
 ---
@@ -276,7 +289,7 @@ This project is a research prototype developed for academic and hackathon purpos
 
 **Mohd Altamish**  
 B.Tech Computer Science Engineering, GL Bajaj Institute of Technology and Management (2025–2029)  
-Founder, [Altamish.dev](https://altamish.dev)  
+LinkedIn [Mohd-Altamish](https://www.linkedin.com/in/mohd-altamish/)  
 GitHub: [@MohdAltamish](https://github.com/MohdAltamish)
 
 ---
