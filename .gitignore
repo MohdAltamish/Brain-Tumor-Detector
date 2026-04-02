@@ -1,0 +1,6 @@
+__pycache__/
+.venv/
+venv/
+kaggle.json
+*.pyc
+.DS_Store
